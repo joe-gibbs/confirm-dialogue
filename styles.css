@@ -1,22 +1,32 @@
 .background {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background: black;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 0.5;
+  padding: 0;
+  left: 0;
+  top: 0;
+  animation: fadeIn ease 0.1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 0.5;
-    padding: 0;
-    left: 0;
-    top: 0;
+  }
 }
 
 .dialogue {
-    position: absolute;
-    background-color: white;
-    padding: 50px;
-    max-width: 50%;
-    text-align: center;
-    left:0;
-    right:0;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  position: absolute;
+  background-color: white;
+  padding: 50px;
+  max-width: 50%;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
