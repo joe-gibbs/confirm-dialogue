@@ -1,4 +1,9 @@
 export class ConfirmDialogue {
+    /**
+     * Creates a new confirmation dialogue that takes up the entire screen.
+     * @param {string} confirm Text to be displayed in the component
+     * @param {Function} callback A callback function containing either true for the confirm button being clicked or false for cancel
+     */
     constructor(confirm, callback) {
         const head = document.createElement("div");
         head.classList.add("reusable-component");
